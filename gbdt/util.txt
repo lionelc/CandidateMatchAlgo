@@ -1,0 +1,13 @@
+#test/GBDTTest.java
+
+#-t num of trees
+#-f feature sampling rate
+#-s data sampling rate
+#-b if a boolean feature
+#-d max num of splits of a tree
+#-n min num of data samples for a tree node
+#-i training data file path
+#-m model file path
+#-t test data file path
+train -t 300 -f 0.6 -s 0.6 -b false -d 30 -n 5 -i data/train -m data/model
+test -m data/model -t data/test 
